@@ -2,7 +2,7 @@ import com.jsuereth.sbtpgp.PgpKeys.publishSigned
 
 ThisBuild / organization       := "org.scala-exercises"
 ThisBuild / githubOrganization := "47degrees"
-ThisBuild / scalaVersion       := "2.13.6"
+ThisBuild / scalaVersion       := "2.13.7"
 
 // This is required by the exercises compiler:
 publishLocal  := (publishLocal dependsOn compile).value
@@ -18,9 +18,9 @@ lazy val exercises = (project in file("."))
     libraryDependencies ++= Seq(
       "org.scala-exercises"        %% "exercise-compiler"         % "0.6.7",
       "org.scala-exercises"        %% "definitions"               % "0.6.7",
-      "org.typelevel"              %% "cats-core"                 % "2.6.1",
-      "com.47deg"                  %% "fetch"                     % "2.1.1",
-      "com.47deg"                  %% "fetch-debug"               % "2.1.1",
+      "org.typelevel"              %% "cats-core"                 % "2.7.0",
+      "com.47deg"                  %% "fetch"                     % "1.3.2",
+      "com.47deg"                  %% "fetch-debug"               % "1.3.2",
       "com.chuusai"                %% "shapeless"                 % "2.3.7",
       "org.scalatest"              %% "scalatest"                 % "3.2.10",
       "org.scalacheck"             %% "scalacheck"                % "1.15.4",
